@@ -1,0 +1,68 @@
+
+
+.first{
+  background-color: #212020;
+  height: 650px;
+}
+.span{
+ text-align: center;
+font-family:fantasy;
+ color: #ddd;
+ padding-top: 120px;
+}
+.imp{
+  font-size: 80px;
+}
+.online{
+  color: orangered;
+  font-size: 160px;
+}
+.online:hover{
+  color: #774a4a;
+}
+
+.web{
+  font-size: 120px;
+}
+
+.we{
+  text-align: center;
+  color: aliceblue;
+  font-size: 15px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.logo{
+  height: 60px;
+  width: 180px;
+}
+
+
+
+.ex{
+  height: 70px;
+  width: 13%;
+  font-size: 18px;
+  border-radius: 80px;
+  background-color: #363333;
+  margin-left: 30px;
+  border-color: aliceblue;
+}
+.ex:hover{
+  background-color: #ddd;
+  
+}
+.get{
+  height: 70px;
+  width: 13%;
+  font-size: 18px;
+  border-radius: 80px;
+  background-color: #363333;
+  margin-left: 30px;
+  border-color: aliceblue;
+  float: right;
+  margin-right: 30px;
+}
+.get:hover{
+  background-color: aliceblue;
+}
+

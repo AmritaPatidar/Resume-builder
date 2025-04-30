@@ -1,0 +1,46 @@
+.body{
+    background-color: #212020;
+  }
+  .video{
+    background-color: #212020;
+      height: 650px;
+    
+  }
+  .loop{
+      border-radius: 550px;
+      width: 60%;
+     margin-left: 20%;
+      box-shadow: 0 0 20px rgb(193, 188, 188);
+    
+   
+  }
+  
+  .loop:hover{
+      border-radius: 10%;
+      width: 100%;
+      margin-left: 0%;
+      margin-top: 30px;
+      box-shadow: 0 0 80px rgb(168, 160, 160);
+  }
+  
+  .animationn {
+      animation: fadeIn 15s infinite alternate;
+    }
+    
+    @keyframes slideIn {
+      from {
+        transform: translateY(100%);
+      }
+      to {
+        transform: translateY(0);
+      }
+    }
+    
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }

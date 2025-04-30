@@ -1,0 +1,157 @@
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './components/Home/Home';
+import Footer from './components/Footer';
+import Nav from './components/Nav/Nav';
+import Resume from './components/resume/Resume'; 
+
+function App() {
+  return (
+   <>
+   <Router>
+    <Nav />
+    <Routes>
+      <Route path='/' element={<Home />} />
+      <Route path='/resume' element={<Resume />} />
+    </Routes>
+    <Footer />
+   </Router>
+   </>
+  );
+}
+
+export default App;
+
+
+
+
+
+import React from 'react';
+import {Link, NavLink } from 'react-router';
+import './Nav.css';
+
+export default function Nav() {
+  return (
+    <div>
+    <nav className="navbar">
+    <div className="logo">MY RESUME</div>
+    <ul>
+    <li className="navbar-item"><NavLink to="/home">Home</NavLink></li>
+    <li className="navbar-item"><NavLink to="/about">About</NavLink></li>
+    <li className="navbar-item"><NavLink to="/resume">Resume</NavLink></li>
+    <li className="navbar-item"><NavLink to="/cv">CV</NavLink></li>
+    <li className="navbar-item"><NavLink to="/contact">Contact</NavLink></li>
+    <button className="login"><NavLink to="/login">Login</NavLink></button>
+</ul>
+
+</nav>
+</div>
+  )
+}
+
+
+
+
+import React from 'react';
+import './Nav.css';
+import { NavLink } from 'react-router';
+
+export default function Nav() {
+  return (
+    <div>
+      <nav className="navbar">
+        <div className="logo">MY RESUME</div>
+        <ul>
+       <NavLink to='/'><li className="navbar-item">Home</li></NavLink>
+          <li className="navbar-item">About</li>
+          <li className="navbar-item">Resume</li>
+          <li className="navbar-item">CV</li>
+          <li className="navbar-item">Contact</li>
+          <button className="login">Login</button>
+        </ul>
+      </nav>
+    </div>
+  );
+}
+body {
+    font-family: Arial, sans-serif;
+   background-color: #5c4894;
+  
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  .navbar {
+     position: fixed; 
+    top: 0;
+    width: 100%;
+    height: 10vh;
+    background-color:   #5c4894;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    z-index: 10;
+    font-weight: bold;
+    font-size: 20px;
+
+    
+  }
+  
+  .logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #dd7296;
+    margin-top: 10px;
+  }
+  .navbar li{
+    color: white;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    margin-top: 10px;
+    gap: 20px;
+  }
+  
+  .navbar-item {
+    color: #fffefe;
+    text-decoration: none;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    position: relative;
+  }
+
+  .login {
+    /* /* display: flex; */
+    /* margin-left: 30%;  */
+    height: 40px;
+    width: 90px;
+    align-items: center;
+    color: white;
+    background-color: #dd7296;
+   margin-left: 130px;
+   margin-bottom: 10px;
+  }
+  
+  .navbar-item::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    margin-bottom: 45px;
+    background: #dd7296;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+  
+  .navbar-item:hover {
+    color: #dd7296;
+  }
+  
+  .navbar-item:hover::after {
+    transform: scaleX(1);
+  }
+    

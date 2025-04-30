@@ -1,0 +1,68 @@
+.one{
+  background-color: rgb(43, 42, 42);;
+
+  gap: 5%;
+  
+}
+.cares{
+  display: flex;
+  gap: 2%;
+  margin-left: 90px;
+
+}
+.cares .card{
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.cares:hover> :not(:hover){
+  filter: blur(5px);
+  opacity: 0.5;
+}
+.care1{
+  background-color: rgb(43, 42, 42);;
+  height: 420px;
+  width: 310px;
+  margin-top: 40px;
+  border-color: aliceblue;
+  box-shadow: 0 0 20px rgb(129, 127, 127);
+  border-radius: 15px;
+}
+
+
+.black1{
+  height: 270px;
+  width: 250px;
+ margin-left: 39px;
+
+ margin-top: 20px;
+
+}
+
+.black2{
+  height: 270px;
+  width: 250px;
+ margin-left: 39px;
+ margin-top: 20px;
+}
+
+
+.black3{
+  height: 270px;
+  width: 250px;
+ margin-left: 39px;
+ margin-top: 20px;
+}
+.black4{
+  height: 270px;
+  width: 250px;
+ margin-left: 39px;
+ margin-top: 20px;
+}
+.better{
+  color: aliceblue;
+  font-size: 20px;
+  margin-left: 30px;
+  margin-top: 18px;
+  color: bisque;
+  
+}

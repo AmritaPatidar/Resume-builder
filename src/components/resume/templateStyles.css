@@ -1,0 +1,24 @@
+body{
+    background-color: #131216;
+    height: 800px;
+}
+.temp .template-image {
+    width: 400px;
+    height: 500px;
+    margin: 53px;
+    margin-top: 80px;
+    /* transition: background-color 0.3s; */
+    background-color: #131216;
+    box-shadow: 0 0 10px rgb(102, 98, 98);
+  
+  }
+  .temp .template-image:hover{
+       box-shadow: 0 0 10px rgb(75, 3, 3);
+       border-radius: 30px;
+  }
+  
+  .temp .template-image:hover {
+    background-color: #1c1a1e;
+    color: aqua;
+  }
+ 

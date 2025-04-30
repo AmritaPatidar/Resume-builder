@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    margin-top: 15px;
+}/* tempelate.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color:white; 
+    margin: 0;
+    padding: 0;
+}
+
+.container3 {
+    width: 100%;
+    margin-left: 100px;
+    gap: 50px;
+    height: 110vh;
+    color: rgb(31, 29, 29);
+    background-color:rgb(239, 232, 235);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 79px 86px 0px -23px rgba(0,0,0,0.75);
+-webkit-box-shadow: 79px 86px 0px -23px rgba(0,0,0,0.75);
+-moz-box-shadow: 79px 86px 0px -23px rgba(0,0,0,0.75);
+}
+
+header, .footer1 {
+    background-color:#301e63;
+    color: rgb(40, 38, 38);
+    padding: 10px 0;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    color: #cc7d15;
+}
+
+/* Flex Container for Form and Template */
+.nahru {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: 50px;
+}
+section{
+    width: 100%;
+}
+
+/* Resume Form Styles */
+.resume-form {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.resume-form div {
+    margin-bottom: 15px;
+}
+
+.resume-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.resume-form input,
+.resume-form textarea,
+.resume-form button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+.resume-form button {
+    background-color: #301e63;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+.resume-form button:hover {
+    background-color: #555;
+}
+
+/* Resume Template Styles */
+
+
+.header, .section, .footer1 {
+    margin: 20px 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.resume-form label{
+    color: black;
+}
+
+.header  .h {
+    font-size: 24px;
+}
+
+.header p {
+    margin: 5px 0;
+}
+
+.profile-pic {
+    border-radius: 50%;
+}
+
+.section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.section ul li {
+    margin-bottom: 10px;
+}
+
+.section ul li strong {
+    display: block;
+    font-size: 18px;
+}
+
+.footer1 p {
+    font-size: 14px;
+}
