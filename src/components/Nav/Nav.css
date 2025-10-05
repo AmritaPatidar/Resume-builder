@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  
 }
 
 .navbar {
@@ -8,6 +9,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #212020;
+ 
 background-size: cover;
 border-color: #ddd;
 border-width: 10px;
